@@ -1,4 +1,3 @@
-// app/components/Navbar.tsx
 "use client";
 import { useState } from "react";
 import { Search, CircleUserRound, ShoppingBag } from "lucide-react";
