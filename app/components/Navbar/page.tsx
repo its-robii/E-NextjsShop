@@ -1,3 +1,4 @@
+// app/components/Navbar.tsx
 "use client";
 import { useState } from "react";
 import { Search, CircleUserRound, ShoppingBag } from "lucide-react";
@@ -9,12 +10,10 @@ export default function Navbar() {
   return (
     <nav className="w-full bg-[#F3F5F7] shadow-md">
       <div className="max-w-340 mx-auto px-4 flex justify-between items-center h-16">
-        {/* Logo */}
         <Link href="/" className="text-[#000000] text-xl font-bold">
           E-Shop
         </Link>
 
-        {/* Navigation Links */}
         <ul className="hidden md:flex space-x-6">
           <li>
             <Link href="/products" className="text-[#6C7275] hover:text-[#141718]">
@@ -33,9 +32,7 @@ export default function Navbar() {
           </li>
         </ul>
 
-        {/* Right Side */}
         <ul className="flex items-center space-x-4">
-          {/* Search Toggle */}
           <li className="relative flex items-center cursor-pointer">
             <button
               onClick={() => setShowSearch((prev) => !prev)}
@@ -54,15 +51,11 @@ export default function Navbar() {
               }`}
             />
           </li>
-
-          {/* User Icon */}
           <li>
             <Link href="/login" className="hover:text-blue-600">
               <CircleUserRound className="w-6 h-6" />
             </Link>
           </li>
-
-          {/* Cart Icon */}
           <li>
             <Link href="/cart" className="hover:text-blue-600">
               <ShoppingBag className="w-6 h-6" />
@@ -72,4 +65,4 @@ export default function Navbar() {
       </div>
     </nav>
   );
-}                   
+}
