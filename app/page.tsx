@@ -8,8 +8,6 @@ export default function Home() {
 
       {/* You can add your homepage sections here like: */}
       {/* <HeroSection /> */}
-     
-     
     </section>
   );
 }            
